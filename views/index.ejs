@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div style="font-size: 30px; font-weight: 900">
+      Congratulation <%- userName %>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+      Your Account has been create, use the link below to complete the process
+      <%- email %>
+    </div>
+    <br />
+    <br />
+
+    <a
+      style="
+        padding: 10px 18px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      "
+      href="<%= url %>"
+      >Start now</a
+    >
+    <br />
+    <br />
+    <br />
+
+    <%- include("./footer.ejs") %>
+  </body>
+</html>
